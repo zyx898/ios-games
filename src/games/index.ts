@@ -1,4 +1,5 @@
 import { ComponentType } from 'react';
+import ReverseTower from './reverse-tower';
 
 export interface Game {
   id: string;
@@ -9,4 +10,12 @@ export interface Game {
 }
 
 // Games are registered here as they are built
-export const GAMES: Game[] = [];
+export const GAMES: Game[] = [
+  {
+    id: 'reverse-tower',
+    title: 'Reverse Tower',
+    description: 'You are the monster! Break through tower defenses to reach the end.',
+    ageGroup: 'teens',
+    component: ReverseTower,
+  },
+];
